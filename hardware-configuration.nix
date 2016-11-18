@@ -11,7 +11,7 @@
   boot.initrd.availableKernelModules = [
     "xhci_pci" "usb_storage" "usbhid" "sd_mod" "sdhci_acpi"
   ];
-  # boot.kernelPackages = pkgs.linuxPackages_chromiumos_3_14;
+  # boot.kernelPackages = pkgs.linuxPackages_chromiumos_3_18;
   boot.kernelModules = [ "kvm-intel" "fbcon" "snd-seq" "snd-rawmidi" "tun" "virtio" ];
   system.requiredKernelConfig = with config.lib.kernelConfig; [
     (isYes "CHROME_PLATFORMS")
@@ -30,6 +30,8 @@
 #    load-module module-alsa-sink device=sysdefault
 #    '';
   };
+
+  sound.enable = true;
 
   boot.initrd.luks.devices = [
     { name = "lvm"; device = "/dev/mmcblk0p2"; preLVM = true; }
