@@ -9,6 +9,15 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+  hardware.pulseaudio = {
+    enable = true;
+    support32Bit = true; # This might be needed for Steam games
+    systemWide = true;
+    package = pkgs.pulseaudioFull;
+#    extraClientConf = ''
+#    load-module module-alsa-sink device=sysdefault
+#    '';
+  };
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
@@ -114,6 +123,7 @@
     jackmix
 
     weechat
+    pciutils
   ];
 
   # List services that you want to enable:

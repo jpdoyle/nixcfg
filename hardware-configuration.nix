@@ -6,6 +6,7 @@
 {
   imports =
     [ <nixpkgs/nixos/modules/installer/scan/not-detected.nix>
+      ./chromebook-audio.nix
     ];
 
   boot.initrd.availableKernelModules = [
@@ -13,25 +14,13 @@
   ];
   # boot.kernelPackages = pkgs.linuxPackages_chromiumos_3_18;
   boot.kernelModules = [ "kvm-intel" "fbcon" "snd-seq" "snd-rawmidi" "tun" "virtio" ];
-  system.requiredKernelConfig = with config.lib.kernelConfig; [
-    (isYes "CHROME_PLATFORMS")
-  ];
+  # system.requiredKernelConfig = with config.lib.kernelConfig; [
+  #   (isYes "CHROME_PLATFORMS")
+  # ];
   boot.extraModulePackages = [ ];
   boot.extraModprobeConfig = ''
-    options snd_hda_intel index=0 model=alc283-sense-combo
+    options snd_hda_intel index=0 model=,alc283-chrome
   '';
-
-  hardware.pulseaudio = {
-    enable = true;
-    support32Bit = true; # This might be needed for Steam games
-    systemWide = true;
-    package = pkgs.pulseaudioFull;
-#    extraClientConf = ''
-#    load-module module-alsa-sink device=sysdefault
-#    '';
-  };
-
-  sound.enable = true;
 
   boot.initrd.luks.devices = [
     { name = "lvm"; device = "/dev/mmcblk0p2"; preLVM = true; }
