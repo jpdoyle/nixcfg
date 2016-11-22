@@ -6,49 +6,36 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
+      ./chromebook-audio.nix
+      ./packages.nix
     ];
   hardware.pulseaudio = {
     enable = true;
     support32Bit = true; # This might be needed for Steam games
     systemWide = true;
     package = pkgs.pulseaudioFull;
-#    extraClientConf = ''
-#    load-module module-alsa-sink device=sysdefault
-#    '';
   };
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
-  # boot.loader.grub.efiSupport = true;
-  # boot.loader.grub.efiInstallAsRemovable = true;
-  # boot.loader.efi.efiSysMountPoint = "/boot/efi";
+
   # Define on which hard drive you want to install Grub.
   boot.loader.grub.device = "/dev/mmcblk0"; # or "nodev" for efi only
   boot.loader.grub.enableCryptodisk = true;
 
-  networking.hostName = "nixboot"; # Define your hostname.
+  networking.hostName = "nixbook"; # Define your hostname.
   networking.networkmanager.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # hardware.pulseaudio.enable = true;
-  # hardware.pulseaudio.package = pkgs.pulseaudioFull;
   #hardware.bluetooth.enable = true;
 
   hardware.opengl.s3tcSupport = true;
   hardware.enableAllFirmware = true;
   services.xserver.useGlamor = true;
-## services.xserver.multitouch.enable = true;
 #  services.printing.enable = false;
 #    nixpkgs.config.allowUnfree = true;
-
-  # Select internationalisation properties.
-  # i18n = {
-  #   consoleFont = "Lat2-Terminus16";
-  #   consoleKeyMap = "us";
-  #   defaultLocale = "en_US.UTF-8";
-  # };
 
   services.xserver.synaptics = {
     enable = true;
@@ -67,66 +54,11 @@
   };
 
 
-  powerManagement.cpuFreqGovernor = "powersave";
+  # powerManagement.cpuFreqGovernor = "powersave";
 
   # Set your time zone.
-  # time.timeZone = "Europe/Amsterdam";
+  time.timeZone = "America/New_York";
   programs.zsh.enable = true;
-
-  # List packages installed in system profile. To search by name, run:
-  # $ nix-env -qaP | grep wget
-  environment.systemPackages = with pkgs; [
-    dmidecode
-    alsaLib
-    alsaPlugins
-    alsaUtils
-    zip
-    unzip
-    vlc
-    w3m
-
-    xpdf
-    man
-    lsof
-    gcc
-    cmake
-    autoconf
-    automake
-    wget
-    vim
-    git
-    curl
-    nox
-    zsh
-    htop
-    tree
-
-    ranger
-    chromium
-    cargo
-    awesome
-    tmux
-    # dropbox-cli
-    vimb
-    firefox
-    xscreensaver
-    networkmanagerapplet
-    pavucontrol
-    alsa-firmware
-    firmwareLinuxNonfree
-    torbrowser
-    tor
-
-    xsel
-    libjack2
-    jack2Full
-    jackmix
-
-    weechat
-    pciutils
-  ];
-
-  # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -137,9 +69,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
-  #services.alsaUtils.enable = true;
-  #sound.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
   # Enable the KDE Desktop Environment.

@@ -6,7 +6,6 @@
 {
   imports =
     [ <nixpkgs/nixos/modules/installer/scan/not-detected.nix>
-      ./chromebook-audio.nix
     ];
 
   boot.initrd.availableKernelModules = [
