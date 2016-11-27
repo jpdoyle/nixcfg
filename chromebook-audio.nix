@@ -357,7 +357,7 @@ state.bytmax98090 {
 	control.15 {
 		iface MIXER
 		name 'ADCL Volume'
-		value 12
+		value 0
 		comment {
 			access 'read write'
 			type INTEGER
@@ -365,13 +365,13 @@ state.bytmax98090 {
 			range '0 - 15'
 			dbmin -1200
 			dbmax 300
-			dbvalue.0 0
+			dbvalue.0 -1200
 		}
 	}
 	control.16 {
 		iface MIXER
 		name 'ADCR Volume'
-		value 11
+		value 0
 		comment {
 			access 'read write'
 			type INTEGER
@@ -379,7 +379,7 @@ state.bytmax98090 {
 			range '0 - 15'
 			dbmin -1200
 			dbmax 300
-			dbvalue.0 -100
+			dbvalue.0 -1200
 		}
 	}
 	control.17 {
@@ -429,7 +429,7 @@ state.bytmax98090 {
 	control.21 {
 		iface MIXER
 		name 'SDIN Mode'
-		value false
+		value true
 		comment {
 			access 'read write'
 			type BOOLEAN
@@ -533,7 +533,7 @@ state.bytmax98090 {
 	control.30 {
 		iface MIXER
 		name 'Digital Volume'
-		value 15
+		value 7
 		comment {
 			access 'read write'
 			type INTEGER
@@ -541,7 +541,7 @@ state.bytmax98090 {
 			range '0 - 15'
 			dbmin -1500
 			dbmax 0
-			dbvalue.0 0
+			dbvalue.0 -800
 		}
 	}
 	control.31 {
@@ -597,7 +597,7 @@ state.bytmax98090 {
 	control.36 {
 		iface MIXER
 		name 'Digital EQ Volume'
-		value 15
+		value 5
 		comment {
 			access 'read write'
 			type INTEGER
@@ -605,7 +605,7 @@ state.bytmax98090 {
 			range '0 - 15'
 			dbmin -1500
 			dbmax 0
-			dbvalue.0 0
+			dbvalue.0 -1000
 		}
 	}
 	control.37 {
@@ -851,8 +851,8 @@ state.bytmax98090 {
 	control.54 {
 		iface MIXER
 		name 'Speaker Volume'
-		value.0 14
-		value.1 14
+		value.0 39
+		value.1 39
 		comment {
 			access 'read write'
 			type INTEGER
@@ -860,8 +860,8 @@ state.bytmax98090 {
 			range '0 - 39'
 			dbmin -4800
 			dbmax 1400
-			dbvalue.0 -600
-			dbvalue.1 -600
+			dbvalue.0 1400
+			dbvalue.1 1400
 		}
 	}
 	control.55 {

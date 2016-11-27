@@ -31,18 +31,20 @@
     tree
 
     ranger
-    chromium
     cargo
     awesome
     tmux
     # dropbox-cli
-    vimb
-    firefox
     xscreensaver
     networkmanagerapplet
     pavucontrol
     alsa-firmware
     firmwareLinuxNonfree
+
+    firefox
+    vimb
+    # chromium
+    google-chrome
     torbrowser
     tor
 
@@ -53,8 +55,32 @@
 
     weechat
     pciutils
+
     python27Full
+    python27Packages.pip
+    python27Packages.virtualenv
+    python27Packages.setuptools
+    pygtk
+
     python3
+    python35Packages.pip
+    python35Packages.virtualenv
+    python35Packages.setuptools
+
+    evince
+
+    dropbox
+
+    deluge
   ];
+
+  nixpkgs.config.allowUnfree = true;
+
+  # nixpkgs.config.chromium = {
+  #     enablePepperFlash = true;
+  #     enablePepperPDF = true;
+  #     # enableWideVine = true;
+  # };
+
 }
 

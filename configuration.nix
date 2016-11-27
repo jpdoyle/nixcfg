@@ -64,13 +64,11 @@
   # services.openssh.enable = true;
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+  # services.printing.enable = true;
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
-
-  nixpkgs.config.allowUnfree = true;
 
   # Enable the KDE Desktop Environment.
   services.xserver.displayManager.kdm.enable = true;
