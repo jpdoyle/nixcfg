@@ -26,20 +26,30 @@
     let sdPath = "/dev/disk/by-uuid/bcedbd17-190f-4977-81f3-4b9e8dcb906b";
     in
     {
+        description = "Remount encrypted SD card";
         restartTriggers = [ sdPath ];
         script = ''
+            while ! [[ -e ${sdPath} ]]; do sleep 1; done
             mkdir -p /sd
             ls /dev >/root/devices
-            ${pkgs.cryptsetup}/bin/cryptsetup luksOpen --key-file
-            \ /root/keyfile ${sdPath} sd --verbose --debug
+            args="--key-file /root/keyfile ${sdPath} sd"
+            args="$args --verbose --debug"
+            ${pkgs.cryptsetup}/bin/cryptsetup luksOpen $args
             ${pkgs.utillinux}/bin/mount -o defaults /dev/mapper/sd /sd
             ${pkgs.coreutils}/bin/chown -R :wheel /sd
             ${pkgs.coreutils}/bin/chmod -R g=u /sd
+            while [[ -e ${sdPath} ]]; do sleep 1; done
+        '';
+        preStop = ''
+            ${pkgs.utillinux}/bin/umount /sd || true
+            ${pkgs.cryptsetup}/bin/cryptsetup close sd || true
+            rm -r /sd || true
         '';
         serviceConfig = {
             Restart = "always";
         };
         wantedBy = [ "local-fs.target" ];
+        after = [ "systemd-udev-settle.service" ];
     };
 
   fileSystems."/".device = "/dev/mapper/vg-root";
