@@ -11,11 +11,9 @@
   boot.initrd.availableKernelModules = [
     "xhci_pci" "usb_storage" "usbhid" "sd_mod" "sdhci_acpi"
   ];
-  # boot.kernelPackages = pkgs.linuxPackages_chromiumos_3_18;
-  boot.kernelModules = [ "kvm-intel" "fbcon" "snd-seq" "snd-rawmidi" "tun" "virtio" ];
-  # system.requiredKernelConfig = with config.lib.kernelConfig; [
-  #   (isYes "CHROME_PLATFORMS")
-  # ];
+  boot.kernelModules = [ "kvm-intel" "fbcon" "snd-seq" "snd-rawmidi"
+    "tun" "virtio"
+  ];
   boot.extraModulePackages = [ ];
   boot.extraModprobeConfig = ''
     options snd_hda_intel index=0 model=,alc283-chrome
@@ -24,8 +22,38 @@
   boot.initrd.luks.devices = [
     { name = "lvm"; device = "/dev/mmcblk0p2"; preLVM = true; }
   ];
+  systemd.services.mountSD =
+    let sdPath = "/dev/disk/by-uuid/bcedbd17-190f-4977-81f3-4b9e8dcb906b";
+    in
+    {
+        restartTriggers = [ sdPath ];
+        script = ''
+            mkdir -p /sd
+            ls /dev >/root/devices
+            ${pkgs.cryptsetup}/bin/cryptsetup luksOpen --key-file
+            \ /root/keyfile ${sdPath} sd --verbose --debug
+            ${pkgs.utillinux}/bin/mount -o defaults /dev/mapper/sd /sd
+            ${pkgs.coreutils}/bin/chown -R :wheel /sd
+            ${pkgs.coreutils}/bin/chmod -R g=u /sd
+        '';
+        serviceConfig = {
+            Restart = "always";
+        };
+        wantedBy = [ "local-fs.target" ];
+    };
 
   fileSystems."/".device = "/dev/mapper/vg-root";
+  # fileSystems."/sd" = {
+  #   device = "/dev/mapper/sd";
+  #   neededForBoot = false;
+  #   encrypted = {
+  #       enable = true;
+  #       keyFile = "/root/keyfile";
+  #       blkDev = "/dev/mmcblk1p2";
+  #       label = "sd";
+  #   };
+  #   options = [ "gid=wheel" ];
+  # };
 
   fileSystems."/boot" =
     { device = "/dev/mmcblk0p1";

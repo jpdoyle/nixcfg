@@ -14,6 +14,8 @@
     vlc
     w3m
 
+    j
+
     xpdf
     man
     lsof
@@ -45,7 +47,7 @@
     vimb
     # chromium
     google-chrome
-    torbrowser
+    # torbrowser
     tor
 
     xsel
@@ -56,7 +58,7 @@
     weechat
     pciutils
 
-    python27Full
+    python27
     python27Packages.pip
     python27Packages.virtualenv
     python27Packages.setuptools
@@ -72,6 +74,11 @@
     dropbox
 
     deluge
+    sl
+    scrot
+
+    #xmodmap
+    ag
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -81,6 +88,11 @@
   #     enablePepperPDF = true;
   #     # enableWideVine = true;
   # };
+
+  nixpkgs.config.git = {
+      withManual = true;
+      guiSupport = true;
+  };
 
 }
 
