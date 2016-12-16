@@ -13,7 +13,7 @@
     ];
   hardware.pulseaudio = {
     enable = true;
-    support32Bit = true; # This might be needed for Steam games
+    support32Bit = true;
     systemWide = true;
     package = pkgs.pulseaudioFull;
   };

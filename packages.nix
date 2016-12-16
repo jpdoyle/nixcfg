@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-
+#let dropbox-local = pkgs.callPackage ./dropbox-local.nix; in
 {
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
@@ -12,17 +12,24 @@
     zip
     unzip
     vlc
-    w3m
-
+    # w3m
+    # haskellPackages.clash-ghc
+    # cabal-install
+    # ghc
+    graphviz
+    xterm
+    cmake
+    gcc
+    gnumake
+    stack
+    dict
     j
+    pcmanfm
+    dmenu
+    xorg.xbacklight
 
-    xpdf
     man
     lsof
-    gcc
-    cmake
-    autoconf
-    automake
     wget
     vim
     git
@@ -33,10 +40,7 @@
     tree
 
     ranger
-    cargo
-    awesome
     tmux
-    # dropbox-cli
     xscreensaver
     networkmanagerapplet
     pavucontrol
@@ -44,11 +48,8 @@
     firmwareLinuxNonfree
 
     firefox
-    vimb
-    # chromium
+    # vimb
     google-chrome
-    # torbrowser
-    tor
 
     xsel
     libjack2
@@ -64,30 +65,25 @@
     python27Packages.setuptools
     pygtk
 
-    python3
-    python35Packages.pip
-    python35Packages.virtualenv
-    python35Packages.setuptools
+    # python3
+    # python35Packages.pip
+    # python35Packages.virtualenv
+    # python35Packages.setuptools
 
     evince
 
-    dropbox
+    #dropbox
+    #(dropbox-local)
 
     deluge
     sl
     scrot
 
-    #xmodmap
     ag
+    sfml
   ];
 
   nixpkgs.config.allowUnfree = true;
-
-  # nixpkgs.config.chromium = {
-  #     enablePepperFlash = true;
-  #     enablePepperPDF = true;
-  #     # enableWideVine = true;
-  # };
 
   nixpkgs.config.git = {
       withManual = true;

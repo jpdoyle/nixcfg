@@ -26,6 +26,7 @@
     let sdPath = "/dev/disk/by-uuid/bcedbd17-190f-4977-81f3-4b9e8dcb906b";
     in
     {
+        enable = true;
         description = "Remount encrypted SD card";
         restartTriggers = [ sdPath ];
         script = ''
@@ -48,7 +49,7 @@
         serviceConfig = {
             Restart = "always";
         };
-        wantedBy = [ "local-fs.target" ];
+        wantedBy = [ "multi-user.target" ];
         after = [ "systemd-udev-settle.service" ];
     };
 
@@ -70,7 +71,7 @@
       fsType = "ext4";
     };
 
-  swapDevices = [ { device = "/dev/mapper/vg-swap"; } ];
+  # swapDevices = [ { device = "/dev/mapper/vg-swap"; } ];
 
   nix.maxJobs = lib.mkDefault 2;
 }

@@ -4,10 +4,15 @@ bashloc=`which bash`
 
 [[ -z $bashloc ]] && exit 1
 
-[[ -z "$bashrunning" ]] && bashrunning="yes" exec $bashloc $0
+[[ -z "$bashrunning" ]] && bashrunning="yes" exec $bashloc $0 $*
 
 flag=$1
-[[ -z $flag ]] && flag="switch"
+if [[ -z $flag ]]; then
+    flag="switch"
+else
+    shift
+fi
 
 export NIXOS_CONFIG=`pwd`/configuration.nix
-exec sudo -E nixos-rebuild $flag
+echo "exec sudo -E nixos-rebuild $flag $*"
+exec sudo -E nixos-rebuild $flag $*
