@@ -71,21 +71,22 @@
   services.xserver.layout = "us";
 
   # Enable the KDE Desktop Environment.
-  services.xserver.displayManager.kdm.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
+  # services.xserver.displayManager.kdm.enable = true;
   #services.xserver.desktopManager.kde4.enable = true;
   services.xserver.desktopManager.xfce.enable = true;
   services.udisks2.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.extraUsers.guest = {
-    isNormalUser = true;
-    uid = 1000;
-  };
   users.extraUsers.joe = {
     isNormalUser = true;
     home = "/home/joe";
     extraGroups = [ "wheel" "networkmanager" "audio" "pulse" ];
     shell = "/run/current-system/sw/bin/zsh";
+  };
+  users.extraUsers.guest = {
+    isNormalUser = true;
+    uid = 1000;
   };
 
   # The NixOS release to be compatible with for stateful data such as databases.
