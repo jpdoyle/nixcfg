@@ -26,14 +26,14 @@
   boot.loader.grub.device = "/dev/mmcblk0"; # or "nodev" for efi only
   boot.loader.grub.enableCryptodisk = true;
 
-  networking.hostName = "nixbook"; # Define your hostname.
+  networking.hostName = "jpd-nixbook"; # Define your hostname.
   networking.networkmanager.enable = true;  # Enables wireless support via wpa_supplicant.
 
   #hardware.bluetooth.enable = true;
 
-  hardware.opengl.s3tcSupport = true;
-  hardware.enableAllFirmware = true;
-  services.xserver.useGlamor = true;
+  # hardware.opengl.s3tcSupport = true;
+  # hardware.enableAllFirmware = true;
+  #services.xserver.useGlamor = true;
 #  services.printing.enable = false;
 #    nixpkgs.config.allowUnfree = true;
 
@@ -43,9 +43,15 @@
     palmDetect = true;
     tapButtons = true;
     twoFingerScroll = true;
+    minSpeed = "1.5";
+    maxSpeed = "2.5";
+    accelFactor = "0.003";
   };
 
   fonts.fontconfig.dpi = 96;
+  fonts.fonts = with pkgs; [
+    mononoki
+  ];
 
   i18n = {
     consoleFont = "lat9w-16";
@@ -70,11 +76,12 @@
   services.xserver.enable = true;
   services.xserver.layout = "us";
 
-  # Enable the KDE Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  # services.xserver.displayManager.kdm.enable = true;
-  #services.xserver.desktopManager.kde4.enable = true;
-  services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.displayManager.slim.enable = true;
+  # services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.windowManager.awesome = {
+    enable = true;
+    luaModules = [ pkgs.luaPackages.vicious ];
+  };
   services.udisks2.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -84,10 +91,12 @@
     extraGroups = [ "wheel" "networkmanager" "audio" "pulse" ];
     shell = "/run/current-system/sw/bin/zsh";
   };
-  users.extraUsers.guest = {
-    isNormalUser = true;
-    uid = 1000;
-  };
+  # users.extraUsers.guest = {
+  #   isNormalUser = true;
+  #   uid = 1000;
+  # };
+  
+  powerManagement.powerDownCommands = "xscreensaver-command -lock";
 
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "16.09";

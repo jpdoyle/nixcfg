@@ -5,6 +5,15 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    rxvt_unicode
+    finalterm
+    eterm
+    giv
+    evilvte
+    gqview
+    feh
+    apvlv
+
     dmidecode
     alsaLib
     alsaPlugins
@@ -12,10 +21,12 @@
     zip
     unzip
     vlc
+    sakura
     # w3m
     # haskellPackages.clash-ghc
     # cabal-install
     # ghc
+    vimb
     graphviz
     xterm
     cmake
@@ -26,7 +37,11 @@
     j
     pcmanfm
     dmenu
+
+    xorg.xmodmap
     xorg.xbacklight
+    xorg.xkeyboardconfig
+    xdg_utils
 
     man
     lsof
@@ -72,7 +87,7 @@
 
     evince
 
-    #dropbox
+    dropbox
     #(dropbox-local)
 
     deluge
@@ -81,6 +96,36 @@
 
     ag
     sfml
+
+    (
+stdenv.mkDerivation rec {
+    name = "st-jpdoyle";
+
+    src = fetchgit {
+        url = "https://github.com/jpdoyle/st.git";
+        rev = "3eea2598b608714624ad52d06e90696d85de9ce8";
+        sha256 = "0hyprlv4fx6m2j8hc6ns2sa14zrq01vkw287m5h23mzkqd1w2kj0";
+    };
+
+    configFile = stdenv.lib.optionalString (conf!=null) (writeText "config.def.h" conf);
+    preBuild = stdenv.lib.optionalString (conf!=null) "cp ${configFile} config.def.h";
+
+    buildInputs = with pkgs;
+    [ pkgconfig xorg.libX11 ncurses xorg.libXext xorg.libXft fontconfig ];
+
+    installPhase = ''
+        TERMINFO=$out/share/terminfo make install PREFIX=$out
+        '';
+
+    meta = {
+        homepage = http://st.suckless.org/;
+        license = stdenv.lib.licenses.mit;
+    };
+
+    conf = builtins.readFile ./config.h;
+}
+)
+    # st
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -88,6 +133,11 @@
   nixpkgs.config.git = {
       withManual = true;
       guiSupport = true;
+  };
+
+  nixpkgs.config.firefox = {
+      enableGoogleTalkPlugin = true;
+      enableAdobeFlash = true;
   };
 
 }
