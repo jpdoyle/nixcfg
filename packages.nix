@@ -54,6 +54,8 @@
     htop
     tree
 
+    cargo
+
     ranger
     tmux
     xscreensaver
@@ -80,6 +82,8 @@
     python27Packages.setuptools
     pygtk
 
+    coq
+
     # python3
     # python35Packages.pip
     # python35Packages.virtualenv
@@ -98,33 +102,33 @@
     sfml
 
     (
-stdenv.mkDerivation rec {
-    name = "st-jpdoyle";
+     stdenv.mkDerivation rec {
+     name = "st-jpdoyle";
 
-    src = fetchgit {
+     src = fetchgit {
         url = "https://github.com/jpdoyle/st.git";
         rev = "3eea2598b608714624ad52d06e90696d85de9ce8";
         sha256 = "0hyprlv4fx6m2j8hc6ns2sa14zrq01vkw287m5h23mzkqd1w2kj0";
-    };
+     };
 
-    configFile = stdenv.lib.optionalString (conf!=null) (writeText "config.def.h" conf);
-    preBuild = stdenv.lib.optionalString (conf!=null) "cp ${configFile} config.def.h";
+     configFile = stdenv.lib.optionalString (conf!=null) (writeText "config.def.h" conf);
+     preBuild = stdenv.lib.optionalString (conf!=null) "cp ${configFile} config.def.h";
 
-    buildInputs = with pkgs;
-    [ pkgconfig xorg.libX11 ncurses xorg.libXext xorg.libXft fontconfig ];
+     buildInputs = with pkgs;
+        [ pkgconfig xorg.libX11 ncurses xorg.libXext xorg.libXft fontconfig ];
 
-    installPhase = ''
+     installPhase = ''
         TERMINFO=$out/share/terminfo make install PREFIX=$out
-        '';
+     '';
 
-    meta = {
-        homepage = http://st.suckless.org/;
-        license = stdenv.lib.licenses.mit;
-    };
+     meta = {
+         homepage = http://st.suckless.org/;
+         license = stdenv.lib.licenses.mit;
+     };
 
-    conf = builtins.readFile ./config.h;
-}
-)
+     conf = builtins.readFile ./config.h;
+     }
+  )
     # st
   ];
 
