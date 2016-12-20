@@ -37,6 +37,7 @@
     j
     pcmanfm
     dmenu
+    epdfview
 
     xorg.xmodmap
     xorg.xbacklight

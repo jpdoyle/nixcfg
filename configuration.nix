@@ -36,6 +36,9 @@
   #services.xserver.useGlamor = true;
 #  services.printing.enable = false;
 #    nixpkgs.config.allowUnfree = true;
+#
+
+  programs.ssh.askPassword = "";
 
   services.xserver.synaptics = {
     enable = true;
@@ -76,8 +79,13 @@
   services.xserver.enable = true;
   services.xserver.layout = "us";
 
-  services.xserver.displayManager.slim.enable = true;
-  # services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.displayManager.slim = {
+      enable = true;
+      theme = pkgs.fetchurl {
+          url = "https://github.com/edwtjo/nixos-black-theme/archive/v1.0.tar.gz";
+          sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
+      };
+  };
   services.xserver.windowManager.awesome = {
     enable = true;
     luaModules = [ pkgs.luaPackages.vicious ];
