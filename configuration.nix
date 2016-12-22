@@ -16,6 +16,11 @@
     support32Bit = true;
     systemWide = true;
     package = pkgs.pulseaudioFull;
+    # extraConfig = ''
+    # [Element Speaker]
+    # switch = mute
+    # volume = zero
+    # '';
   };
 
   # Use the GRUB 2 boot loader.
@@ -63,7 +68,7 @@
   };
 
 
-  # powerManagement.cpuFreqGovernor = "powersave";
+  powerManagement.cpuFreqGovernor = "ondemand";
 
   # Set your time zone.
   time.timeZone = "America/New_York";

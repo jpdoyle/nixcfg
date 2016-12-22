@@ -5,8 +5,6 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    rxvt_unicode
-    finalterm
     eterm
     giv
     evilvte
@@ -22,10 +20,6 @@
     unzip
     vlc
     sakura
-    # w3m
-    # haskellPackages.clash-ghc
-    # cabal-install
-    # ghc
     vimb
     graphviz
     xterm
@@ -55,7 +49,7 @@
     htop
     tree
 
-    cargo
+    # cargo
 
     ranger
     tmux
@@ -83,17 +77,11 @@
     python27Packages.setuptools
     pygtk
 
-    coq
-
-    # python3
-    # python35Packages.pip
-    # python35Packages.virtualenv
-    # python35Packages.setuptools
-
     evince
 
-    dropbox
-    #(dropbox-local)
+    # dropbox
+
+    arandr
 
     deluge
     sl
