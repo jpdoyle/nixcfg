@@ -47,7 +47,7 @@
 
   services.xserver.synaptics = {
     enable = true;
-    buttonsMap = [ 1 2 3 ];
+    buttonsMap = [ 1 3 2 ];
     palmDetect = true;
     tapButtons = true;
     twoFingerScroll = true;
@@ -83,6 +83,8 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
+  
+  services.gnome3.gvfs.enable = true;
 
   services.xserver.displayManager.slim = {
       enable = true;
@@ -101,7 +103,7 @@
   users.extraUsers.joe = {
     isNormalUser = true;
     home = "/home/joe";
-    extraGroups = [ "wheel" "networkmanager" "audio" "pulse" ];
+    extraGroups = [ "wheel" "networkmanager" "audio" "pulse" "fuse" ];
     shell = "/run/current-system/sw/bin/zsh";
   };
   # users.extraUsers.guest = {

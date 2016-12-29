@@ -12,7 +12,7 @@
     "xhci_pci" "usb_storage" "usbhid" "sd_mod" "sdhci_acpi"
   ];
   boot.kernelModules = [ "kvm-intel" "fbcon" "snd-seq" "snd-rawmidi"
-    "tun" "virtio"
+    "tun" "virtio" "fuse"
   ];
   boot.extraModulePackages = [ ];
   boot.extraModprobeConfig = ''

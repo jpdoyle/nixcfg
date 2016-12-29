@@ -10,7 +10,8 @@
     evilvte
     gqview
     feh
-    apvlv
+    xfce.thunar
+    sshfsFuse
 
     dmidecode
     alsaLib
