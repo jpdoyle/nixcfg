@@ -78,11 +78,11 @@
     enable = true;
     handlers = {
         powerTap = {
-            event = "button/power.*";
+            event = "button/power LNXPWRBN.*";
             action = builtins.readFile ./shutdown-click;
         };
         lidLockSleep = {
-            event = "button/lid.*";
+            event = "button/lid LID close.*";
             action = builtins.readFile ./suspend.sh;
         };
     };

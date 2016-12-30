@@ -1,14 +1,20 @@
 # only initiate shutdown for 2 button presses -- because I accidentally
 # hit the button far too often
+log=false
 STAT="$(stat -c "%Y" /tmp/shutdown-click.lck 2>/dev/null)"
+$log && echo "shutdown-click: $STAT" >>/tmp/acpi-log
 if [ -z "$STAT" ]; then
     touch /tmp/shutdown-click.lck
+    $log && echo "shutdown-click: EXITING" >>/tmp/acpi-log
     exit 0
 fi
 TIMEDIFF="$(( $(date +"%s") - $STAT ))"
+$log && echo "shutdown-click: time diff is $TIMEDIFF" >>/tmp/acpi-log
 touch /tmp/shutdown-click.lck
 if [ "$TIMEDIFF" -gt "2" ]; then
+    $log && echo "shutdown-click: EXITING" >>/tmp/acpi-log
     exit 0
 fi
+$log && echo "SHUTTING DOWN" >>/tmp/acpi-log
 
 shutdown -h now "Power button pressed"

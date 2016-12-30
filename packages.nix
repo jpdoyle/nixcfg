@@ -15,6 +15,8 @@
     pmount
     acpi
     finger_bsd
+    gitAndTools.gitFull
+    acpid
 
     dmidecode
     alsaLib
