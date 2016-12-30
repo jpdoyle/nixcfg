@@ -54,24 +54,11 @@
     };
 
   fileSystems."/".device = "/dev/mapper/vg-root";
-  # fileSystems."/sd" = {
-  #   device = "/dev/mapper/sd";
-  #   neededForBoot = false;
-  #   encrypted = {
-  #       enable = true;
-  #       keyFile = "/root/keyfile";
-  #       blkDev = "/dev/mmcblk1p2";
-  #       label = "sd";
-  #   };
-  #   options = [ "gid=wheel" ];
-  # };
 
   fileSystems."/boot" =
     { device = "/dev/mmcblk0p1";
       fsType = "ext4";
     };
-
-  # swapDevices = [ { device = "/dev/mapper/vg-swap"; } ];
 
   nix.maxJobs = lib.mkDefault 2;
 }

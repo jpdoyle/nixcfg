@@ -41,7 +41,11 @@
   #services.xserver.useGlamor = true;
 #  services.printing.enable = false;
 #    nixpkgs.config.allowUnfree = true;
-#
+
+  services.logind.extraConfig = ''
+    HandlePowerKey=ignore
+    HandleLidSwitch=ignore
+  '';
 
   programs.ssh.askPassword = "";
 
@@ -69,6 +73,20 @@
 
 
   powerManagement.cpuFreqGovernor = "ondemand";
+
+  services.acpid = {
+    enable = true;
+    handlers = {
+        powerTap = {
+            event = "button/power.*";
+            action = builtins.readFile ./shutdown-click;
+        };
+        lidLockSleep = {
+            event = "button/lid.*";
+            action = builtins.readFile ./suspend.sh;
+        };
+    };
+  };
 
   # Set your time zone.
   time.timeZone = "America/New_York";

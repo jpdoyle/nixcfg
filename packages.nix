@@ -12,6 +12,9 @@
     feh
     xfce.thunar
     sshfsFuse
+    pmount
+    acpi
+    finger_bsd
 
     dmidecode
     alsaLib
