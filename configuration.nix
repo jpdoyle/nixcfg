@@ -16,11 +16,9 @@
     support32Bit = true;
     systemWide = true;
     package = pkgs.pulseaudioFull;
-    # extraConfig = ''
-    # [Element Speaker]
-    # switch = mute
-    # volume = zero
-    # '';
+    extraConfig = ''
+    load-module module-switch-on-port-available
+    '';
   };
 
   # Use the GRUB 2 boot loader.
@@ -84,6 +82,18 @@
         lidLockSleep = {
             event = "button/lid LID close.*";
             action = builtins.readFile ./suspend.sh;
+        };
+        headphonesIn = {
+            event = "jack/headphone HEADPHONE plug";
+            action = ''
+                headphones=true
+            '' + builtins.readFile ./headphones.sh;
+        };
+        headphonesOut = {
+            event = "jack/headphone HEADPHONE unplug";
+            action = ''
+                headphones=false
+            '' + builtins.readFile ./headphones.sh;
         };
     };
   };

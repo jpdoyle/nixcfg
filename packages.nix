@@ -38,6 +38,9 @@
     pcmanfm
     dmenu
     epdfview
+    minicom
+    usbutils
+    gnome3.cheese
 
     xorg.xmodmap
     xorg.xbacklight
