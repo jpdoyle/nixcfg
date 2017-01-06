@@ -127,6 +127,12 @@
   };
   services.udisks2.enable = true;
 
+  services.syncthing = {
+    enable = true;
+    user = "joe";
+    dataDir = "/home/joe/.syncthing";
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.extraUsers.joe = {
     isNormalUser = true;

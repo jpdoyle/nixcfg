@@ -7,10 +7,9 @@
   environment.systemPackages = with pkgs; [
     eterm
     giv
-    evilvte
     gqview
     feh
-    xfce.thunar
+    # xfce.thunar
     sshfsFuse
     pmount
     acpi
@@ -25,8 +24,6 @@
     zip
     unzip
     vlc
-    sakura
-    vimb
     graphviz
     xterm
     cmake
@@ -41,6 +38,7 @@
     minicom
     usbutils
     gnome3.cheese
+    gimp
 
     xorg.xmodmap
     xorg.xbacklight
@@ -58,7 +56,7 @@
     htop
     tree
 
-    # cargo
+    cargo
 
     ranger
     tmux
@@ -70,7 +68,7 @@
 
     firefox
     # vimb
-    google-chrome
+    # google-chrome
 
     xsel
     libjack2
@@ -92,12 +90,14 @@
 
     arandr
 
-    deluge
+    # deluge
     sl
     scrot
 
     ag
-    sfml
+    # sfml
+    python27Packages.pygtk
+    python27Packages.syncthing-gtk
 
     (
      stdenv.mkDerivation rec {

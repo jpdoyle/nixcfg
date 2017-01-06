@@ -31,20 +31,21 @@
         restartTriggers = [ sdPath ];
         script = ''
             while ! [[ -e ${sdPath} ]]; do sleep 1; done
-            mkdir -p /sd
+            mkdir -p /run/media/sd
             ls /dev >/root/devices
             args="--key-file /root/keyfile ${sdPath} sd"
             args="$args --verbose --debug"
             ${pkgs.cryptsetup}/bin/cryptsetup luksOpen $args
-            ${pkgs.utillinux}/bin/mount -o defaults /dev/mapper/sd /sd
-            ${pkgs.coreutils}/bin/chown -R :wheel /sd
-            ${pkgs.coreutils}/bin/chmod -R g=u /sd
+            ${pkgs.utillinux}/bin/mount -o defaults /dev/mapper/sd /run/media/sd
+            ${pkgs.coreutils}/bin/chown -R :wheel /run/media/sd
+            ${pkgs.coreutils}/bin/chmod -R g=u /run/media/sd
             while [[ -e ${sdPath} ]]; do sleep 1; done
         '';
         preStop = ''
-            ${pkgs.utillinux}/bin/umount /sd || true
+            ${pkgs.coreutils}/bin/sync || true
+            ${pkgs.utillinux}/bin/umount /run/media/sd || true
             ${pkgs.cryptsetup}/bin/cryptsetup close sd || true
-            rm -r /sd || true
+            rm -d /run/media/sd  || true
         '';
         serviceConfig = {
             Restart = "always";
