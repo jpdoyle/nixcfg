@@ -1,6 +1,5 @@
 { config, pkgs, ... }:
 
-#let dropbox-local = pkgs.callPackage ./dropbox-local.nix; in
 {
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
@@ -9,13 +8,13 @@
     giv
     gqview
     feh
-    # xfce.thunar
     sshfsFuse
     pmount
     acpi
     finger_bsd
     gitAndTools.gitFull
     acpid
+    ntfs3g
 
     dmidecode
     alsaLib
@@ -124,10 +123,9 @@
          license = stdenv.lib.licenses.mit;
      };
 
-     conf = builtins.readFile ./config.h;
+     conf = builtins.readFile ./st-config.h;
      }
   )
-    # st
   ];
 
   nixpkgs.config.allowUnfree = true;

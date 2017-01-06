@@ -13,6 +13,6 @@ else
     shift
 fi
 
-export NIXOS_CONFIG=`pwd`/configuration.nix
+[[ -n $NIXOS_CONFIG ]] || export NIXOS_CONFIG=`pwd`/configuration.nix
 echo "exec sudo -E nixos-rebuild $flag $*"
 exec sudo -E nixos-rebuild $flag $*
