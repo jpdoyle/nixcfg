@@ -15,11 +15,14 @@
     gitAndTools.gitFull
     acpid
     ntfs3g
+
     bashmount
     gtk
     gnome.gnomeicontheme
     hicolor_icon_theme
     shared_mime_info
+    xorg.xev
+    sshfsFuse
 
     dmidecode
     alsaLib
@@ -33,9 +36,7 @@
     cmake
     gcc
     gnumake
-    stack
     dict
-    j
     pcmanfm
     dmenu
     epdfview
@@ -59,8 +60,6 @@
     zsh
     htop
     tree
-
-    cargo
 
     ranger
     tmux
@@ -99,7 +98,6 @@
     scrot
 
     ag
-    # sfml
     python27Packages.pygtk
     python27Packages.syncthing-gtk
 

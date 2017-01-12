@@ -5,6 +5,11 @@
         ./packages.nix
     ];
 
+    system.activationScripts.binbash = {
+        text = "! [[ -e /bin/bash ]] && ln -s /bin/sh /bin/bash";
+        deps = [ "binsh" ];
+    };
+
     # Set your time zone.
     time.timeZone = "America/New_York";
     programs.zsh.enable = true;
@@ -26,7 +31,7 @@
     services.syncthing = {
         enable = true;
         user = "joe";
-        dataDir = "/home/joe/.syncthing";
+        dataDir = "/home/joe/.config/syncthing";
     };
 
     # Define a user account. Don't forget to set a password with ‘passwd’.
