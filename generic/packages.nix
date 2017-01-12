@@ -15,6 +15,8 @@
     gitAndTools.gitFull
     acpid
     ntfs3g
+    xorg.xev
+    sshfsFuse
 
     dmidecode
     alsaLib
@@ -28,9 +30,7 @@
     cmake
     gcc
     gnumake
-    stack
     dict
-    j
     pcmanfm
     dmenu
     epdfview
@@ -54,8 +54,6 @@
     zsh
     htop
     tree
-
-    cargo
 
     ranger
     tmux
@@ -94,7 +92,6 @@
     scrot
 
     ag
-    # sfml
     python27Packages.pygtk
     python27Packages.syncthing-gtk
 
