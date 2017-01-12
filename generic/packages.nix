@@ -15,6 +15,11 @@
     gitAndTools.gitFull
     acpid
     ntfs3g
+    bashmount
+    gtk
+    gnome.gnomeicontheme
+    hicolor_icon_theme
+    shared_mime_info
 
     dmidecode
     alsaLib
