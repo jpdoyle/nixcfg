@@ -4,25 +4,16 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    eterm
     giv
     gqview
-    feh
-    sshfsFuse
-    pmount
     acpi
-    finger_bsd
     gitAndTools.gitFull
     acpid
     ntfs3g
 
     bashmount
-    gtk
-    gnome.gnomeicontheme
-    hicolor_icon_theme
-    shared_mime_info
     xorg.xev
-    sshfsFuse
+    #sshfsFuse
 
     dmidecode
     alsaLib
@@ -31,19 +22,14 @@
     zip
     unzip
     vlc
-    graphviz
-    xterm
     cmake
     gcc
     gnumake
     dict
     pcmanfm
     dmenu
-    epdfview
-    minicom
     usbutils
-    gnome3.cheese
-    gimp
+    #gnome3.cheese
 
     xorg.xmodmap
     xorg.xbacklight
@@ -70,15 +56,10 @@
     firmwareLinuxNonfree
 
     firefox
-    # vimb
-    # google-chrome
 
     xsel
-    libjack2
-    jack2Full
-    jackmix
 
-    weechat
+    #weechat
     pciutils
 
     python27
@@ -89,16 +70,13 @@
 
     evince
 
-    # dropbox
-
     arandr
 
-    # deluge
+     deluge
     sl
     scrot
 
     ag
-    python27Packages.pygtk
     python27Packages.syncthing-gtk
 
     (

@@ -11,6 +11,12 @@
     cargo
     gnumeric
     bashmount
+
+    gimp
+    gtk
+    gnome.gnomeicontheme
+    hicolor_icon_theme
+    shared_mime_info
   ];
 
 }
