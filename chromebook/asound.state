@@ -453,7 +453,7 @@ state.bytmax98090 {
 	control.24 {
 		iface MIXER
 		name 'Filter Mode'
-		value Voice
+		value Music
 		comment {
 			access 'read write'
 			type ENUMERATED
@@ -845,8 +845,8 @@ state.bytmax98090 {
 	control.54 {
 		iface MIXER
 		name 'Speaker Volume'
-		value.0 21
-		value.1 21
+		value.0 26
+		value.1 26
 		comment {
 			access 'read write'
 			type INTEGER
@@ -854,8 +854,8 @@ state.bytmax98090 {
 			range '0 - 39'
 			dbmin -4800
 			dbmax 1400
-			dbvalue.0 100
-			dbvalue.1 100
+			dbvalue.0 600
+			dbvalue.1 600
 		}
 	}
 	control.55 {
@@ -877,7 +877,7 @@ state.bytmax98090 {
 	control.56 {
 		iface MIXER
 		name 'Headphone Left Switch'
-		value true
+		value false
 		comment {
 			access 'read write'
 			type BOOLEAN
@@ -887,7 +887,7 @@ state.bytmax98090 {
 	control.57 {
 		iface MIXER
 		name 'Headphone Right Switch'
-		value true
+		value false
 		comment {
 			access 'read write'
 			type BOOLEAN

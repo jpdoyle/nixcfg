@@ -27,6 +27,16 @@
         gksu
         screen
         torbrowser
+
+        linuxPackages_4_1.openafsClient
+        krb5Full
+        kerberos
+        gnupg
+
+        androidsdk
+
+        ghc
+        stack
     ];
 
 }

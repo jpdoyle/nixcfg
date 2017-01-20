@@ -24,5 +24,11 @@
         ATTRS{idProduct}=="04[789B]?", MODE:="0666"
     '';
 
+    services.printing = {
+	enable = true;
+	drivers = [ pkgs.gutenprint ];
+    };
+
+    #services.openafsClient.enable = true;
 }
 
