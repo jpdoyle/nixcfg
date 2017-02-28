@@ -29,6 +29,16 @@
 	drivers = [ pkgs.gutenprint ];
     };
 
+    environment.etc."krb5.conf".text = builtins.readFile ./krb5.conf;
+
     #services.openafsClient.enable = true;
+
+    hardware.bluetooth.enable = true;
+
+    nixpkgs.config = {
+        packageOverrides = pkgs: {
+            bluez = pkgs.bluez5;
+        };
+    };
 }
 

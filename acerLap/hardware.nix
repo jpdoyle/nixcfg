@@ -23,11 +23,11 @@
     powerManagement.cpuFreqGovernor = "ondemand";
 
     boot.initrd.availableKernelModules = [
-        "xhci_pci" "ehci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" 
+        "xhci_pci" "ehci_pci" "ahci" "usb_storage" "usbhid" "sd_mod"
         "sdhci_acpi" "sr_mod" "rtsx_pci_sdmmc"
     ];
     boot.kernelModules = [ "kvm-intel" "fbcon" "snd-seq" "snd-rawmidi"
-        "tun" "virtio" "fuse"
+        "tun" "virtio" "fuse" "afs"
     ];
     boot.extraModulePackages = [ ];
 
@@ -49,5 +49,5 @@
     [ { device = "/dev/mapper/luksroot-swap"; }
     ];
 
-    nix.maxJobs = lib.mkDefault 8;
+    nix.maxJobs = 8;
 }

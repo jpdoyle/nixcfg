@@ -10,10 +10,15 @@
     gitAndTools.gitFull
     acpid
     ntfs3g
+    gnome3.eog
 
     bashmount
     xorg.xev
     #sshfsFuse
+
+    openssh_with_kerberos
+    pass
+    spass
 
     dmidecode
     alsaLib

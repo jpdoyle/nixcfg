@@ -17,9 +17,14 @@
 
     programs.ssh.askPassword = "";
 
+    # nixpkgs.config.packageOverrides = with pkgs; {
+    #     openssh = openssh_with_kerberos;
+    # };
+
     fonts.fontconfig.dpi = 96;
     fonts.fonts = with pkgs; [
         mononoki
+        open-dyslexic
     ];
 
     i18n = {
@@ -38,7 +43,8 @@
     users.extraUsers.joe = {
         isNormalUser = true;
         home = "/home/joe";
-        extraGroups = [ "wheel" "networkmanager" "audio" "pulse" "fuse" ];
+        extraGroups = [ "wheel" "networkmanager" "audio" "pulse"
+                        "fuse" "lp" ];
         shell = "/run/current-system/sw/bin/zsh";
     };
     # users.extraUsers.guest = {

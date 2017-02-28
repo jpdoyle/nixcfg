@@ -7,6 +7,7 @@
         steam
         stack
         j
+        glew
         sfml
         cargo
         gnumeric
@@ -14,6 +15,54 @@
         openssl_1_1_0
         openssl
         arduino
+        sshfsFuse
+        pmount
+        mplayer
+        espeak
+        libreoffice
+
+        keychain
+        rfkill
+        bluez-tools
+        gnome3.nautilus
+
+        ncat
+        nmap_graphical
+        smbclient
+        net_snmp
+
+        coq
+        ott
+        prooftree
+
+        blender
+        openscad
+        ao
+        alliance
+        antimony
+        freecad
+        kicad
+        leocad
+        librecad
+        solvespace
+
+        gtk
+        numix-gtk-theme
+        numix-icon-theme
+        numix-icon-theme-circle
+
+        openjdk
+        jre
+        icedtea8_web
+
+        gnome.gnomeicontheme
+        hicolor_icon_theme
+        shared_mime_info
+        graphviz
+        gnome3.cheese
+        gimp
+        weechat
+        deluge
 
         jre
         openjdk
@@ -28,7 +77,10 @@
         screen
         torbrowser
 
-        linuxPackages_4_1.openafsClient
+        audacity
+        system-config-printer
+
+        #linuxPackages_4_1.openafsClient
         krb5Full
         kerberos
         gnupg
@@ -37,6 +89,22 @@
 
         ghc
         stack
+
+        google-chrome
+        chromium
+
+        lyx
+        ipe
+        biber
+        texlive.combined.scheme-full
+
+        airstrike
+        atanks
+        blobby
+        #btanks
+        construo
+        liquidwar
+        the-powder-toy
     ];
 }
 

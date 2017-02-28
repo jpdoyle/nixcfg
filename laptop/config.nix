@@ -7,13 +7,15 @@
 
     services.gnome3.gvfs.enable = true;
 
-    services.xserver.displayManager.slim = {
-        enable = true;
-        theme = pkgs.fetchurl {
-            url = "https://github.com/edwtjo/nixos-black-theme/archive/v1.0.tar.gz";
-            sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
-        };
-    };
+    services.xserver.displayManager.lightdm.enable = true;
+    #services.xserver.displayManager.slim = {
+    #    enable = true;
+    #    theme = pkgs.fetchurl {
+    #        url = "https://github.com/edwtjo/nixos-black-theme/archive/v1.0.tar.gz";
+    #        sha256 = "13bm7k3p6k7yq47nba08bn48cfv536k4ipnwwp1q1l2ydlp85r9d";
+    #    };
+    #};
+
     services.xserver.windowManager.awesome = {
         enable = true;
         luaModules = [ pkgs.luaPackages.vicious ];
