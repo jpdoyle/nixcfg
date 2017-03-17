@@ -13,6 +13,16 @@ else
     shift
 fi
 
-[[ -n $NIXOS_CONFIG ]] || export NIXOS_CONFIG=`pwd`/configuration.nix
+if [[ -z $NIXOS_CONFIG ]]; then
+    if [[ -e /nixos-build ]]; then
+        export NIXOS_CONFIG=$(tail -n 1 /nixos-build | cut -d' ' -f 2)
+    else
+        export NIXOS_CONFIG=`pwd`/configuration.nix
+    fi
+else
+    export NIXOS_CONFIG
+fi
+echo "nix config: $NIXOS_CONFIG"
 echo "exec sudo -E nixos-rebuild $flag $*"
+sudo -E bash -c 'echo "$(date "+%Y-%m-%d-%H-%M-%S") $NIXOS_CONFIG" >>/nixos-build'
 exec sudo -E nixos-rebuild $flag $*

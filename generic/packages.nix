@@ -11,6 +11,7 @@
     acpid
     ntfs3g
     gnome3.eog
+    noto-fonts
 
     bashmount
     xorg.xev

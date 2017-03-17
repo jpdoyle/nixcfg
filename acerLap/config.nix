@@ -35,10 +35,5 @@
 
     hardware.bluetooth.enable = true;
 
-    nixpkgs.config = {
-        packageOverrides = pkgs: {
-            bluez = pkgs.bluez5;
-        };
-    };
 }
 

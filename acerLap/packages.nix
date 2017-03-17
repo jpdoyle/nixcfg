@@ -105,6 +105,12 @@
         construo
         liquidwar
         the-powder-toy
+
+        python27Packages.numpy
+        python27Packages.pyqt4
+
+        rubber
+        gnome3.gnome_terminal
     ];
 }
 
