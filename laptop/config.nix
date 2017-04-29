@@ -19,6 +19,7 @@
     services.xserver.windowManager.awesome = {
         enable = true;
         luaModules = [ pkgs.luaPackages.vicious ];
+        package = pkgs.awesome-3-5;
     };
     services.udisks2.enable = true;
 
@@ -52,6 +53,8 @@
         };
     };
 
+    #pulseaudio = true;
+
     # Enables wireless support via networkmanager
     networking.networkmanager.enable = true;
 
@@ -60,9 +63,9 @@
         support32Bit = true;
         #systemWide = true;
         package = pkgs.pulseaudioFull;
-        extraConfig = ''
-            load-module module-switch-on-connect
-        '';
+        #extraConfig = ''
+            #load-module module-switch-on-connect
+        #'';
     };
 }
 

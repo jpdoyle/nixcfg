@@ -4,13 +4,14 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    giv
+    # giv
+    gnome3.eog
     gqview
+    gnome3.nautilus
     acpi
     gitAndTools.gitFull
     acpid
     ntfs3g
-    gnome3.eog
     noto-fonts
 
     bashmount
@@ -72,7 +73,7 @@
     python27Packages.pip
     python27Packages.virtualenv
     python27Packages.setuptools
-    pygtk
+    python27Packages.pygtk
 
     evince
 

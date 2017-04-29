@@ -5,6 +5,7 @@
         <nixpkgs/nixos/modules/installer/scan/not-detected.nix>
         ./audio.nix
         ./hardware.nix
+        ./packages.nix
     ];
 
     services.acpid = {
@@ -24,6 +25,9 @@
             };
         };
     };
+
+    services.sshd.enable = true;
+    services.openssh.forwardX11 = true;
 
 }
 

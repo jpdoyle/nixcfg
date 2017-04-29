@@ -4,6 +4,8 @@
     # List packages installed in system profile. To search by name, run:
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
+        gnome3.dconf
+
         steam
         stack
         j
@@ -20,6 +22,20 @@
         mplayer
         espeak
         libreoffice
+        gnome3.gedit
+
+
+        meld
+
+        cabal-install
+
+        wine
+
+        autoconf
+        automake
+        gnum4
+        pkgconfig
+        libtool
 
         keychain
         rfkill
@@ -38,7 +54,7 @@
         blender
         openscad
         ao
-        alliance
+        # alliance
         antimony
         freecad
         kicad
@@ -46,7 +62,7 @@
         librecad
         solvespace
 
-        gtk
+        # gnome.gtk
         numix-gtk-theme
         numix-icon-theme
         numix-icon-theme-circle
@@ -55,7 +71,9 @@
         jre
         icedtea8_web
 
-        gnome.gnomeicontheme
+        ghostscriptX
+
+        gnome2.gnomeicontheme
         hicolor_icon_theme
         shared_mime_info
         graphviz
@@ -111,6 +129,31 @@
 
         rubber
         gnome3.gnome_terminal
+
+        netpbm
+        gocr
+
+        tesseract
+        ocropus
+        ocrad
+
+        ruby
+        poppler_utils
+        pdftk
+
+        calibre
+
+        cups-bjnp
+        cups-dymo
+        cups-filters
+        gutenprintBin
+        mfcj470dw-cupswrapper
+        mfcj6510dw-cupswrapper
+
+        #qmake
+
+        openconnect
+        openconnect_openssl
     ];
 }
 

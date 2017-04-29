@@ -45,6 +45,11 @@
         fsType = "ext4";
     };
 
+    fileSystems."/windows" =
+    { device = "/dev/disk/by-uuid/A092858192855CA2";
+        fsType = "ntfs";
+    };
+
     swapDevices =
     [ { device = "/dev/mapper/luksroot-swap"; }
     ];
