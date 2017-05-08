@@ -56,7 +56,8 @@
     #pulseaudio = true;
 
     # Enables wireless support via networkmanager
-    networking.networkmanager.enable = true;
+    # networking.networkmanager.enable = true;
+    networking.wireless.enable = true;
 
     hardware.pulseaudio = {
         enable = true;
