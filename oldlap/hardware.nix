@@ -9,7 +9,7 @@
     ];
 
     boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
-    #boot.loader.grub.enableCryptodisk = true;
+    boot.loader.grub.enableCryptodisk = true;
 
   boot.initrd.availableKernelModules = [ "uhci_hcd" "ehci_pci" "ata_piix" "firewire_ohci" "usb_storage" "sd_mod" "sr_mod" "sdhci_pci" "xhci_pci" "ehci_pci" "ahci" "usb_storage" "sd_mod" "sr_mod" "sdhci_pci" ];
     boot.kernelModules = [ "kvm-intel" "wl" "fbcon" "snd-seq" "snd-rawmidi"

@@ -155,5 +155,7 @@
         openconnect
         openconnect_openssl
     ];
+
+  nixpkgs.config.firefox.enableAdobeFlash = true;
 }
 
