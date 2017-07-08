@@ -34,9 +34,10 @@
         palmDetect = true;
         tapButtons = true;
         twoFingerScroll = true;
-        minSpeed = "1.5";
-        maxSpeed = "2.5";
-        accelFactor = "0.003";
+        horizTwoFingerScroll = true;
+        minSpeed = "0.5";
+        maxSpeed = "4.5";
+        accelFactor = "0.05";
     };
 
     services.acpid = {

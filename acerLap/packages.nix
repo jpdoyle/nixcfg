@@ -154,6 +154,8 @@
 
         openconnect
         openconnect_openssl
+        
+        gnome_mplayer
     ];
 }
 

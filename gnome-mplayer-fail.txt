@@ -1,0 +1,701 @@
+building Nix...
+building the system configuration...
+these derivations will be built:
+  /nix/store/scp57vc3zgx9skgbzidcbl3y0hk2zha3-gnome-mplayer-1.0.4.drv
+  /nix/store/mswf78rhj2a3pwm1pxjw248mj1bm74jv-system-path.drv
+  /nix/store/zzn2glkwdw2rzywvk2rnsll08yxrxqhn-dbus-conf.drv
+  /nix/store/97y8yi08lac4by88q81772gbx8q06zbi-unit-dbus.service.drv
+  /nix/store/ffnp100f0cgy07ncr7g35id6gicjlhih-unit-polkit.service.drv
+  /nix/store/2b5hwg50m5pr01fhkbi0zzb6b2idn5n7-system-units.drv
+  /nix/store/knxv13hbh3v0zqbma64jq0ip7084rhnh-unit-dbus.service.drv
+  /nix/store/kkhw0jmyr2myk6cf2g0vam8wahqjpgpb-user-units.drv
+  /nix/store/nvixigzd2wci953pbg6h1acqhlyws21n-etc.drv
+  /nix/store/x4yxns47apk76kxzqfz7sfy2p1y5bj6f-nixos-system-jpd-nixtop-16.09.1836.067e66a.drv
+building path(s) ‘/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4’
+unpacking sources
+unpacking source archive /nix/store/1b7yk0ci8r86v44rfdmga90qs6glrd1v-gnome-mplayer-1.0.4.tar.gz
+source root is gnome-mplayer-1.0.4
+setting SOURCE_DATE_EPOCH to timestamp 1309538289 of file gnome-mplayer-1.0.4/po/zh_TW.po
+patching sources
+configuring
+fixing libtool script ./ltmain.sh
+configure flags: --disable-dependency-tracking --prefix=/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4  
+checking for a BSD-compatible install... /nix/store/lcwdbh37ha51z86c62mm65vbcfc990dd-coreutils-8.25/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /nix/store/lcwdbh37ha51z86c62mm65vbcfc990dd-coreutils-8.25/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... none
+checking for library containing strerror... none required
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) none
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) none
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /nix/store/slrbnmc69dly2gf4by296n32ypsccr0f-gnugrep-2.25/bin/grep
+checking for egrep... /nix/store/slrbnmc69dly2gf4by296n32ypsccr0f-gnugrep-2.25/bin/grep -E
+checking for ANSI C header files... yes
+checking how to run the C preprocessor... gcc -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... none
+checking whether gcc and cc understand -c and -o together... yes
+checking for ranlib... ranlib
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for LC_MESSAGES... yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for ngettext in libc... yes
+checking for dgettext in libc... yes
+checking for bind_textdomain_codeset... yes
+checking for msgfmt... no
+checking for WIN32... no
+checking for pkg-config... /nix/store/y419xb805psvlia6rl2jjrxmfsin5v63-pkg-config-0.29/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for X11... yes
+configure: gtk3 is no
+checking for GTK... yes
+checking for GLIB... yes
+checking for GTK2_12... yes
+checking for GTK2_14... yes
+checking for GTK2_18... yes
+checking for GTK2_20... yes
+checking for GTK2_22... yes
+checking for GTK2_24... yes
+checking for GLIB2_14... yes
+checking for GLIB2_24... yes
+checking for GLIB2_26... yes
+checking for GIO... yes
+checking for DBUS... yes
+checking for XSCRNSAVER... no
+configure: Compiling withou xscrnsaver support
+checking for ALSA... no
+configure: Compiling without asound support
+checking for PULSE... no
+configure: Compiling without PulseAudio support
+checking for NOTIFY... no
+configure: Compiling without libnotify support
+checking for LIBNOTIFY_07... no
+configure: Using older libnotify
+checking for GPOD06... no
+configure: Compiling without libgpod 0.6.0 support
+checking for GPOD07... no
+configure: Compiling without libgpod 0.7.0 support
+checking for MUSICBRAINZ... no
+configure: Compiling without libmusicbrainz3 support
+checking for NAUTILUS... no
+./configure: line 9800: which: command not found
+checking for pkg-config... (cached) /nix/store/y419xb805psvlia6rl2jjrxmfsin5v63-pkg-config-0.29/bin/pkg-config
+checking pkg-config is at least version 0.16... yes
+checking mntent.h usability... yes
+checking mntent.h presence... yes
+checking for mntent.h... yes
+checking sys/ucred.h usability... no
+checking sys/ucred.h presence... no
+checking for sys/ucred.h... no
+checking sys/mount.h usability... yes
+checking sys/mount.h presence... yes
+checking for sys/mount.h... yes
+checking fstab.h usability... yes
+checking fstab.h presence... yes
+checking for fstab.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating icons/Makefile
+config.status: creating icons/16x16/Makefile
+config.status: creating icons/22x22/Makefile
+config.status: creating icons/24x24/Makefile
+config.status: creating icons/32x32/Makefile
+config.status: creating icons/48x48/Makefile
+config.status: creating icons/scalable/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libgmtk/Makefile
+config.status: creating src/libgmlib/Makefile
+config.status: creating po/Makefile.in
+config.status: creating gnome-mplayer.spec
+config.status: creating gnome-mplayer.schemas
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+building
+make flags: SHELL=/nix/store/gabjbkwga2dhhp2wzyaxl83r8hjjfc37-bash-4.3-p48/bin/bash    
+make  all-recursive
+make[1]: Entering directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4'
+Making all in src
+make[2]: Entering directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src'
+Making all in libgmtk
+make[3]: Entering directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src/libgmtk'
+  CC     libgmtk_a-gmtk_audio_meter.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -pthread -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0 -I/nix/store/zcmvp7p3i9pz2cn3nhs1kj82llsaix73-gtk+-2.24.31/lib/gtk-2.0/include -I/nix/store/xpp1884wz7rqglw73khhdw3gq5kv44w7-cairo-1.14.6-dev/include/cairo -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include -I/nix/store/7hd88nj59y5hd7y2vy5ggphg3l0q3irz-fontconfig-2.11.1-dev/include -I/nix/store/3s8fy1bn0s19af4p2w3wlrax38v7pzdv-expat-2.2.0-dev/include -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/97q807angincpgfvr0a4593jpzfby5zv-pango-1.40.2-dev/include/pango-1.0 -I/nix/store/kc2bxwfjrknpq8hv8cj8gn5baz5yia4f-gdk-pixbuf-2.36.2-dev/include/gdk-pixbuf-2.0 -I/nix/store/65dg72jhlhvjdvwqgvgn5mssms125l4a-atk-2.20.0-dev/include/atk-1.0  -g -O2 -c -o libgmtk_a-gmtk_audio_meter.o `test -f 'gmtk_audio_meter.c' || echo './'`gmtk_audio_meter.c
+  CC     libgmtk_a-gmtk_media_tracker.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -pthread -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0 -I/nix/store/zcmvp7p3i9pz2cn3nhs1kj82llsaix73-gtk+-2.24.31/lib/gtk-2.0/include -I/nix/store/xpp1884wz7rqglw73khhdw3gq5kv44w7-cairo-1.14.6-dev/include/cairo -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include -I/nix/store/7hd88nj59y5hd7y2vy5ggphg3l0q3irz-fontconfig-2.11.1-dev/include -I/nix/store/3s8fy1bn0s19af4p2w3wlrax38v7pzdv-expat-2.2.0-dev/include -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/97q807angincpgfvr0a4593jpzfby5zv-pango-1.40.2-dev/include/pango-1.0 -I/nix/store/kc2bxwfjrknpq8hv8cj8gn5baz5yia4f-gdk-pixbuf-2.36.2-dev/include/gdk-pixbuf-2.0 -I/nix/store/65dg72jhlhvjdvwqgvgn5mssms125l4a-atk-2.20.0-dev/include/atk-1.0  -g -O2 -c -o libgmtk_a-gmtk_media_tracker.o `test -f 'gmtk_media_tracker.c' || echo './'`gmtk_media_tracker.c
+  CC     libgmtk_a-gmtk_media_player.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -pthread -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0 -I/nix/store/zcmvp7p3i9pz2cn3nhs1kj82llsaix73-gtk+-2.24.31/lib/gtk-2.0/include -I/nix/store/xpp1884wz7rqglw73khhdw3gq5kv44w7-cairo-1.14.6-dev/include/cairo -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include -I/nix/store/7hd88nj59y5hd7y2vy5ggphg3l0q3irz-fontconfig-2.11.1-dev/include -I/nix/store/3s8fy1bn0s19af4p2w3wlrax38v7pzdv-expat-2.2.0-dev/include -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/97q807angincpgfvr0a4593jpzfby5zv-pango-1.40.2-dev/include/pango-1.0 -I/nix/store/kc2bxwfjrknpq8hv8cj8gn5baz5yia4f-gdk-pixbuf-2.36.2-dev/include/gdk-pixbuf-2.0 -I/nix/store/65dg72jhlhvjdvwqgvgn5mssms125l4a-atk-2.20.0-dev/include/atk-1.0  -g -O2 -c -o libgmtk_a-gmtk_media_player.o `test -f 'gmtk_media_player.c' || echo './'`gmtk_media_player.c
+gmtk_media_player.c: In function 'signal_event':
+gmtk_media_player.c:72:9: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+         if (g_strcasecmp(event->event_name, "position-changed") == 0 ||
+         ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gmtk_media_player.h:28,
+                 from gmtk_media_player.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gmtk_media_player.c:73:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             g_strcasecmp(event->event_name, "cache-percent-changed") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gmtk_media_player.h:28,
+                 from gmtk_media_player.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gmtk_media_player.c:75:9: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+         } else if (g_strcasecmp(event->event_name, "size_allocate") == 0) {
+         ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gmtk_media_player.h:28,
+                 from gmtk_media_player.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gmtk_media_player.c: In function 'gmtk_media_player_init':
+gmtk_media_player.c:258:5: warning: 'g_cond_new' is deprecated [-Wdeprecated-declarations]
+     player->mplayer_complete_cond = g_cond_new();
+     ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:107:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gmtk_media_player.h:28,
+                 from gmtk_media_player.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/deprecated/gthread.h:281:17: note: declared here
+ GCond *         g_cond_new              (void);
+                 ^
+gmtk_media_player.c:259:5: warning: 'g_mutex_new' is deprecated [-Wdeprecated-declarations]
+     player->thread_running = g_mutex_new();
+     ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:107:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gmtk_media_player.h:28,
+                 from gmtk_media_player.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/deprecated/gthread.h:277:17: note: declared here
+ GMutex *        g_mutex_new             (void);
+                 ^
+gmtk_media_player.c: In function 'gmtk_media_player_set_state':
+gmtk_media_player.c:726:13: warning: 'g_thread_create' is deprecated: Use 'g_thread_new' instead [-Wdeprecated-declarations]
+             player->mplayer_thread = g_thread_create(launch_mplayer, player, TRUE, NULL);
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:107:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gmtk_media_player.h:28,
+                 from gmtk_media_player.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/deprecated/gthread.h:104:10: note: declared here
+ GThread *g_thread_create       (GThreadFunc       func,
+          ^
+gmtk_media_player.c: In function 'write_to_mplayer':
+gmtk_media_player.c:3202:13: warning: 'g_strncasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strncasecmp(cmd, "pause", strlen("pause")) == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gmtk_media_player.h:28,
+                 from gmtk_media_player.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:203:23: note: declared here
+ gint                  g_strncasecmp    (const gchar *s1,
+                       ^
+  CC     libgmtk_a-gmtk_output_combo_box.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -pthread -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0 -I/nix/store/zcmvp7p3i9pz2cn3nhs1kj82llsaix73-gtk+-2.24.31/lib/gtk-2.0/include -I/nix/store/xpp1884wz7rqglw73khhdw3gq5kv44w7-cairo-1.14.6-dev/include/cairo -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include -I/nix/store/7hd88nj59y5hd7y2vy5ggphg3l0q3irz-fontconfig-2.11.1-dev/include -I/nix/store/3s8fy1bn0s19af4p2w3wlrax38v7pzdv-expat-2.2.0-dev/include -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/97q807angincpgfvr0a4593jpzfby5zv-pango-1.40.2-dev/include/pango-1.0 -I/nix/store/kc2bxwfjrknpq8hv8cj8gn5baz5yia4f-gdk-pixbuf-2.36.2-dev/include/gdk-pixbuf-2.0 -I/nix/store/65dg72jhlhvjdvwqgvgn5mssms125l4a-atk-2.20.0-dev/include/atk-1.0  -g -O2 -c -o libgmtk_a-gmtk_output_combo_box.o `test -f 'gmtk_output_combo_box.c' || echo './'`gmtk_output_combo_box.c
+  AR     libgmtk.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src/libgmtk'
+Making all in libgmlib
+make[3]: Entering directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src/libgmlib'
+  CC     libgmlib_a-gm_audio.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -DGIO_ENABLED -DGLIB2_26_ENABLED   -g -O2 -c -o libgmlib_a-gm_audio.o `test -f 'gm_audio.c' || echo './'`gm_audio.c
+  CC     libgmlib_a-gm_file.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -DGIO_ENABLED -DGLIB2_26_ENABLED   -g -O2 -c -o libgmlib_a-gm_file.o `test -f 'gm_file.c' || echo './'`gm_file.c
+gm_file.c: In function 'gm_get_path':
+gm_file.c:69:9: warning: ignoring return value of 'getcwd', declared with attribute warn_unused_result [-Wunused-result]
+         getcwd(cwd, 1024);
+         ^
+  CC     libgmlib_a-gm_parse.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -DGIO_ENABLED -DGLIB2_26_ENABLED   -g -O2 -c -o libgmlib_a-gm_parse.o `test -f 'gm_parse.c' || echo './'`gm_parse.c
+gm_parse.c: In function 'gm_parse_asx_is_asx':
+gm_parse.c:137:13: warning: 'g_strncasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strncasecmp(newline, "<asx", g_utf8_strlen("<asx", -1)) == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from gm_parse.h:25,
+                 from gm_parse.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:203:23: note: declared here
+ gint                  g_strncasecmp    (const gchar *s1,
+                       ^
+  CC     libgmlib_a-gm_pref_store.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -DGIO_ENABLED -DGLIB2_26_ENABLED   -g -O2 -c -o libgmlib_a-gm_pref_store.o `test -f 'gm_pref_store.c' || echo './'`gm_pref_store.c
+  CC     libgmlib_a-gm_strfuncs.o
+gcc -DHAVE_CONFIG_H -I. -I../..    -fPIC -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include  -DGIO_ENABLED -DGLIB2_26_ENABLED   -g -O2 -c -o libgmlib_a-gm_strfuncs.o `test -f 'gm_strfuncs.c' || echo './'`gm_strfuncs.c
+  AR     libgmlib.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+make[3]: Leaving directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src/libgmlib'
+make[3]: Entering directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src'
+  CC     gui.o
+gcc -DHAVE_CONFIG_H -I. -I.. -DPACKAGE_LOCALE_DIR=\""/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4//locale"\" -DPACKAGE_SRC_DIR=\""."\" -DPACKAGE_DATA_DIR=\""/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4/share"\" -I../pixmaps -pthread -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0 -I/nix/store/zcmvp7p3i9pz2cn3nhs1kj82llsaix73-gtk+-2.24.31/lib/gtk-2.0/include -I/nix/store/xpp1884wz7rqglw73khhdw3gq5kv44w7-cairo-1.14.6-dev/include/cairo -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include -I/nix/store/7hd88nj59y5hd7y2vy5ggphg3l0q3irz-fontconfig-2.11.1-dev/include -I/nix/store/3s8fy1bn0s19af4p2w3wlrax38v7pzdv-expat-2.2.0-dev/include -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/97q807angincpgfvr0a4593jpzfby5zv-pango-1.40.2-dev/include/pango-1.0 -I/nix/store/kc2bxwfjrknpq8hv8cj8gn5baz5yia4f-gdk-pixbuf-2.36.2-dev/include/gdk-pixbuf-2.0 -I/nix/store/65dg72jhlhvjdvwqgvgn5mssms125l4a-atk-2.20.0-dev/include/atk-1.0 -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/kk0j1hrn64bnrg627ii602hczkzbp4s9-dbus-1.10.12-dev/include/dbus-1.0 -I/nix/store/mm77i7q7a2bhsclab6lf4igwvlf7bw35-dbus-1.10.12-lib/lib/dbus-1.0/include -I/nix/store/6rfix6xb0mvz7v61yvfy3nfzhfd79am0-dbus-glib-0.106-dev/include/dbus-1.0              -Wall -g -DGTK2_12_ENABLED -DGLIB2_14_ENABLED -DGIO_ENABLED      -g -O2 -c gui.c
+gui.c: In function 'set_volume':
+gui.c:1347:9: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+         if (rpcontrols != NULL && g_strcasecmp(rpcontrols, "volumeslider") == 0) {
+         ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c: In function 'output_combobox_changed_callback':
+gui.c:4502:12: warning: variable 'device' set but not used [-Wunused-but-set-variable]
+     gchar *device;
+            ^
+gui.c: In function 'player_attribute_changed_callback':
+gui.c:6053:9: warning: 'g_thread_create' is deprecated: Use 'g_thread_new' instead [-Wdeprecated-declarations]
+         g_thread_create(get_cover_art, metadata, FALSE, NULL);
+         ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:107:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/deprecated/gthread.h:104:10: note: declared here
+ GThread *g_thread_create       (GThreadFunc       func,
+          ^
+gui.c: In function 'create_window':
+gui.c:7181:9: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+         && (rpcontrols != NULL && g_strcasecmp(rpcontrols, "volumeslider") == 0)) {
+         ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c: In function 'show_window':
+gui.c:7246:5: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+     if (rpcontrols == NULL || (rpcontrols != NULL && g_strcasecmp(rpcontrols, "all") == 0)) {
+     ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7289:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "statusbar") == 0
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7290:17: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+                 || g_strcasecmp(visuals[i], "statusfield") == 0
+                 ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7291:17: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+                 || g_strcasecmp(visuals[i], "positionfield") == 0 || g_strcasecmp(visuals[i], "positionslider") == 0) {
+                 ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7291:17: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+                 || g_strcasecmp(visuals[i], "positionfield") == 0 || g_strcasecmp(visuals[i], "positionslider") == 0) {
+                 ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7299:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "infovolumepanel") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7306:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "infopanel") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7311:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "volumeslider") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7316:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "playbutton") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7321:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "stopbutton") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7326:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "pausebutton") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7331:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "ffctrl") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7336:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "rwctrl") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7342:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "imagewindow") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+gui.c:7347:13: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+             if (g_strcasecmp(visuals[i], "controlpanel") == 0) {
+             ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from gui.c:29:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+  CC     playlist.o
+gcc -DHAVE_CONFIG_H -I. -I.. -DPACKAGE_LOCALE_DIR=\""/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4//locale"\" -DPACKAGE_SRC_DIR=\""."\" -DPACKAGE_DATA_DIR=\""/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4/share"\" -I../pixmaps -pthread -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0 -I/nix/store/zcmvp7p3i9pz2cn3nhs1kj82llsaix73-gtk+-2.24.31/lib/gtk-2.0/include -I/nix/store/xpp1884wz7rqglw73khhdw3gq5kv44w7-cairo-1.14.6-dev/include/cairo -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include -I/nix/store/7hd88nj59y5hd7y2vy5ggphg3l0q3irz-fontconfig-2.11.1-dev/include -I/nix/store/3s8fy1bn0s19af4p2w3wlrax38v7pzdv-expat-2.2.0-dev/include -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/97q807angincpgfvr0a4593jpzfby5zv-pango-1.40.2-dev/include/pango-1.0 -I/nix/store/kc2bxwfjrknpq8hv8cj8gn5baz5yia4f-gdk-pixbuf-2.36.2-dev/include/gdk-pixbuf-2.0 -I/nix/store/65dg72jhlhvjdvwqgvgn5mssms125l4a-atk-2.20.0-dev/include/atk-1.0 -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/kk0j1hrn64bnrg627ii602hczkzbp4s9-dbus-1.10.12-dev/include/dbus-1.0 -I/nix/store/mm77i7q7a2bhsclab6lf4igwvlf7bw35-dbus-1.10.12-lib/lib/dbus-1.0/include -I/nix/store/6rfix6xb0mvz7v61yvfy3nfzhfd79am0-dbus-glib-0.106-dev/include/dbus-1.0              -Wall -g -DGTK2_12_ENABLED -DGLIB2_14_ENABLED -DGIO_ENABLED      -g -O2 -c playlist.c
+  CC     support.o
+gcc -DHAVE_CONFIG_H -I. -I.. -DPACKAGE_LOCALE_DIR=\""/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4//locale"\" -DPACKAGE_SRC_DIR=\""."\" -DPACKAGE_DATA_DIR=\""/nix/store/cihgv64ja10dnh0i0qrp48ffd26bkc4h-gnome-mplayer-1.0.4/share"\" -I../pixmaps -pthread -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0 -I/nix/store/zcmvp7p3i9pz2cn3nhs1kj82llsaix73-gtk+-2.24.31/lib/gtk-2.0/include -I/nix/store/xpp1884wz7rqglw73khhdw3gq5kv44w7-cairo-1.14.6-dev/include/cairo -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include -I/nix/store/7hd88nj59y5hd7y2vy5ggphg3l0q3irz-fontconfig-2.11.1-dev/include -I/nix/store/3s8fy1bn0s19af4p2w3wlrax38v7pzdv-expat-2.2.0-dev/include -I/nix/store/gnc27n7b4cqs4vg253rdw85skj5cmviw-freetype-2.6.5-dev/include/freetype2 -I/nix/store/97q807angincpgfvr0a4593jpzfby5zv-pango-1.40.2-dev/include/pango-1.0 -I/nix/store/kc2bxwfjrknpq8hv8cj8gn5baz5yia4f-gdk-pixbuf-2.36.2-dev/include/gdk-pixbuf-2.0 -I/nix/store/65dg72jhlhvjdvwqgvgn5mssms125l4a-atk-2.20.0-dev/include/atk-1.0 -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0 -I/nix/store/2dvq5lj4kjxxrrfpmrkbr5yq34lnzj9d-glib-2.48.2/lib/glib-2.0/include -I/nix/store/kk0j1hrn64bnrg627ii602hczkzbp4s9-dbus-1.10.12-dev/include/dbus-1.0 -I/nix/store/mm77i7q7a2bhsclab6lf4igwvlf7bw35-dbus-1.10.12-lib/lib/dbus-1.0/include -I/nix/store/6rfix6xb0mvz7v61yvfy3nfzhfd79am0-dbus-glib-0.106-dev/include/dbus-1.0              -Wall -g -DGTK2_12_ENABLED -DGLIB2_14_ENABLED -DGIO_ENABLED      -g -O2 -c support.c
+support.c: In function 'parse_ram':
+support.c:466:37: warning: argument to 'sizeof' in 'memset' call is the same expression as the destination; did you mean to provide an explicit length? [-Wsizeof-pointer-memaccess]
+             memset(buffer, 0, sizeof(buffer));
+                                     ^
+support.c: In function 'parse_cdda':
+support.c:644:21: warning: 'g_strcasecmp' is deprecated [-Wdeprecated-declarations]
+                     if (g_strcasecmp(filename, track) == 0) {
+                     ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:79:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from support.h:28,
+                 from support.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gstrfuncs.h:200:23: note: declared here
+ gint                  g_strcasecmp     (const gchar *s1,
+                       ^
+support.c: In function 'parse_vcd':
+support.c:888:45: error: format not a string literal and no format arguments [-Werror=format-security]
+                                             GTK_BUTTONS_CLOSE, error_msg);
+                                             ^
+support.c: In function 'unmap_af_export_file':
+support.c:2870:9: warning: 'g_mapped_file_free' is deprecated: Use 'g_mapped_file_unref' instead [-Wdeprecated-declarations]
+         g_mapped_file_free(idle->mapped_af_export);
+         ^
+In file included from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib.h:59:0,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gobject/gbinding.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib-object.h:23,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gioenums.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/giotypes.h:28,
+                 from /nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/gio/gio.h:26,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdkapplaunchcontext.h:30,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gdk/gdk.h:32,
+                 from /nix/store/j64q3lwvf6ww96m1n8frvhnvnsl74vzy-gtk+-2.24.31-dev/include/gtk-2.0/gtk/gtk.h:32,
+                 from gui.h:29,
+                 from support.h:28,
+                 from support.c:25:
+/nix/store/7w1pp05fzjn6xi91m2vndfp2dg0yk7f0-glib-2.48.2-dev/include/glib-2.0/glib/gmappedfile.h:54:14: note: declared here
+ void         g_mapped_file_free         (GMappedFile  *file);
+              ^
+cc1: some warnings being treated as errors
+make[3]: *** [Makefile:555: support.o] Error 1
+make[3]: Leaving directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src'
+make[2]: *** [Makefile:590: all-recursive] Error 1
+make[2]: Leaving directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4/src'
+make[1]: *** [Makefile:518: all-recursive] Error 1
+make[1]: Leaving directory '/tmp/nix-build-gnome-mplayer-1.0.4.drv-0/gnome-mplayer-1.0.4'
+make: *** [Makefile:352: all] Error 2
+builder for ‘/nix/store/scp57vc3zgx9skgbzidcbl3y0hk2zha3-gnome-mplayer-1.0.4.drv’ failed with exit code 2
+cannot build derivation ‘/nix/store/mswf78rhj2a3pwm1pxjw248mj1bm74jv-system-path.drv’: 1 dependencies couldn't be built
+cannot build derivation ‘/nix/store/x4yxns47apk76kxzqfz7sfy2p1y5bj6f-nixos-system-jpd-nixtop-16.09.1836.067e66a.drv’: 1 dependencies couldn't be built
+error: build of ‘/nix/store/x4yxns47apk76kxzqfz7sfy2p1y5bj6f-nixos-system-jpd-nixtop-16.09.1836.067e66a.drv’ failed
