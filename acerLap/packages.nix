@@ -157,5 +157,7 @@
         
         gnome_mplayer
     ];
+
+  nixpkgs.config.firefox.enableAdobeFlash = true;
 }
 
