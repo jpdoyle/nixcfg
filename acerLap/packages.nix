@@ -5,6 +5,9 @@
     # $ nix-env -qaP | grep wget
     environment.systemPackages = with pkgs; [
         gnome3.dconf
+        #skype
+
+        teensy-loader-cli
 
         steam
         stack
@@ -12,6 +15,7 @@
         glew
         sfml
         cargo
+        rustc
         gnumeric
         bashmount
         openssl_1_1_0
@@ -23,6 +27,9 @@
         espeak
         libreoffice
         gnome3.gedit
+        rhythmbox
+        brasero
+        exfat
 
 
         meld
@@ -85,7 +92,8 @@
         jre
         openjdk
         ant
-        avrgcclibc
+        avrgcc
+        avrlibc
         avrdude
 
         dfu-util
@@ -106,9 +114,9 @@
         androidsdk
 
         ghc
-        stack
+        #stack
 
-        google-chrome
+        #google-chrome
         chromium
 
         lyx
@@ -154,10 +162,12 @@
 
         openconnect
         openconnect_openssl
-        
+
         gnome_mplayer
+
+        octaveFull
     ];
 
-  nixpkgs.config.firefox.enableAdobeFlash = true;
+  #nixpkgs.config.firefox.enableAdobeFlash = true;
 }
 

@@ -39,4 +39,7 @@
 
   nix.maxJobs = lib.mkDefault 8;
   powerManagement.cpuFreqGovernor = "ondemand";
+
+  hardware.bumblebee.enable = true;
+  # services.xserver.videoDrivers = [ "nvidia" ];
 }

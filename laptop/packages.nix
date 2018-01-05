@@ -6,22 +6,22 @@
   environment.systemPackages = with pkgs; [
     # giv
     gnome3.eog
-    gqview
+    #gqview
     gnome3.nautilus
     acpi
     gitAndTools.gitFull
     acpid
     ntfs3g
-    noto-fonts
-    ripgrep
+    #noto-fonts
+    #ripgrep
 
     bashmount
     xorg.xev
     #sshfsFuse
 
     openssh_with_kerberos
-    pass
-    spass
+    #pass
+    #spass
 
     dmidecode
     alsaLib
@@ -35,7 +35,7 @@
     gnumake
     dict
     pcmanfm
-    dmenu2
+    dmenu
     usbutils
     #gnome3.cheese
 
@@ -64,6 +64,7 @@
     firmwareLinuxNonfree
 
     firefox
+    torbrowser
 
     xsel
 
@@ -80,7 +81,7 @@
 
     arandr
 
-     deluge
+     #deluge
     sl
     scrot
 
@@ -120,14 +121,14 @@
   nixpkgs.config.allowUnfree = true;
 
   nixpkgs.config.git = {
-      withManual = true;
       guiSupport = true;
   };
 
   nixpkgs.config.firefox = {
-      enableGoogleTalkPlugin = true;
-      #enableAdobeFlash = true;
+      #enableGoogleTalkPlugin = true;
+      # enableAdobeFlash = true;
   };
 
 }
+
 

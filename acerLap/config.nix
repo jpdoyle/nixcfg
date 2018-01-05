@@ -37,5 +37,9 @@
 
     networking.firewall.allowedTCPPorts = [ 8000 ];
 
+    services.syncthing.useInotify = true;
+
+    # services.printing.gutenprint = true;
+
 }
 

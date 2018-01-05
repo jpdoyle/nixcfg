@@ -2,8 +2,8 @@
 
 {
     imports = [
-        ./packages.nix
         ./base-cfg.nix
+        ./pkg-core.nix
     ];
 }
 

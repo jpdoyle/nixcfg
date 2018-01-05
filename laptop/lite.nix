@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ./packages.nix
+        ./packages-lite.nix
         ./base-cfg.nix
     ];
 }

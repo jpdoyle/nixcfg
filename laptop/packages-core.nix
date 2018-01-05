@@ -6,36 +6,28 @@
   environment.systemPackages = with pkgs; [
     # giv
     gnome3.eog
-    gqview
+    #gqview
     gnome3.nautilus
     acpi
     gitAndTools.gitFull
     acpid
-    ntfs3g
-    noto-fonts
-    ripgrep
 
     bashmount
-    xorg.xev
     #sshfsFuse
 
     openssh_with_kerberos
-    pass
-    spass
+    #pass
+    #spass
 
-    dmidecode
-    alsaLib
-    alsaPlugins
-    alsaUtils
-    zip
+    #dmidecode
     unzip
-    vlc
-    cmake
-    gcc
-    gnumake
+    #vlc
+    #cmake
+    #gcc
+    #gnumake
     dict
     pcmanfm
-    dmenu2
+    dmenu
     usbutils
     #gnome3.cheese
 
@@ -46,11 +38,10 @@
 
     man
     lsof
-    wget
+    #wget
     vim
     git
     curl
-    nox
     zsh
     htop
     tree
@@ -64,27 +55,27 @@
     firmwareLinuxNonfree
 
     firefox
+    #torbrowser
 
     xsel
 
-    #weechat
     pciutils
 
-    python27
-    python27Packages.pip
-    python27Packages.virtualenv
-    python27Packages.setuptools
-    python27Packages.pygtk
+    #python27
+    #python27Packages.pip
+    #python27Packages.virtualenv
+    #python27Packages.setuptools
+    #python27Packages.pygtk
 
     evince
 
     arandr
 
-     deluge
-    sl
+     #deluge
+    #sl
     scrot
 
-    ag
+    #ag
     python27Packages.syncthing-gtk
 
     (
@@ -119,15 +110,16 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  nixpkgs.config.git = {
-      withManual = true;
-      guiSupport = true;
-  };
+  #nixpkgs.config.git = {
+  #    guiSupport = true;
+  #};
 
   nixpkgs.config.firefox = {
-      enableGoogleTalkPlugin = true;
-      #enableAdobeFlash = true;
+      #enableGoogleTalkPlugin = true;
+      # enableAdobeFlash = true;
   };
 
 }
+
+
 

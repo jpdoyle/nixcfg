@@ -3,8 +3,8 @@
 {
     imports = [
         ./chromebook/config.nix
-        ./generic/config.nix
-        ./laptop/lite.nix
+        ./generic/core.nix
+        ./laptop/core.nix
         ./laptop/netman.nix
     ];
 
