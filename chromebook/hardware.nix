@@ -10,6 +10,8 @@
     boot.loader.grub.enable = true;
     boot.loader.grub.version = 2;
 
+    boot.kernelPackages = pkgs.linuxPackages_4_4;
+
     # Define on which hard drive you want to install Grub.
     boot.loader.grub.device = "/dev/mmcblk0"; # or "nodev" for efi only
         boot.loader.grub.enableCryptodisk = true;
@@ -24,7 +26,7 @@
     ];
     boot.extraModulePackages = [ ];
     boot.extraModprobeConfig = ''
-        options snd_hda_intel index=0 model=,alc283-chrome
+        options snd-hda-intel index=1 model=alc283-dac-wcaps
         '';
 
     boot.initrd.luks.devices = [

@@ -6,6 +6,9 @@
     environment.systemPackages = with pkgs; [
         # google-chrome
         #chromium
+        alsaLib
+        alsa-firmware
+        sl
 
     ];
 }

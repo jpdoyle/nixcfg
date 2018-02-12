@@ -42,14 +42,16 @@ runSuspend() {
         for user in `who | awk '{print $1}'`; do
             displaynum=`echo $x | sed 's:/tmp/.X11-unix/X::'`
             log "Lock screen for $user on display $displaynum"
+            su $user -c "DISPLAY=:$displaynum.0 (xscreensaver-command -watch | (while read x; do echo $x; if [[ -n $(echo $x | grep 'RUN') ]]; then break; fi; done)" & # &>>/tmp/acpi-log
             if ! (ps aux | grep $user | grep -v grep | grep xscreensaver); then
                 su $user -c "DISPLAY=:$displaynum.0 xscreensaver & disown"
                 sleep 0.1s
             fi
             su $user -c "DISPLAY=:$displaynum.0 xscreensaver-command -lock" # &>>/tmp/acpi-log
+            wait
         done
     done
-    sleep 0.001s
+    #sleep 0.001s
     (acpi | grep 'Discharging' >/dev/null) && systemctl suspend
 }
 

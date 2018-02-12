@@ -8,6 +8,12 @@
         cron
         mplayer
         bind
+
+        nano
+        #uvccapture
+        fswebcam
+        libv4l
+        v4l_utils
     ];
 
 }

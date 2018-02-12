@@ -9,5 +9,6 @@
         ./server/config.nix
     ];
 
+
     networking.hostName = "jpd-oldlap";
 }
